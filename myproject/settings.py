@@ -29,6 +29,8 @@ DEBUG = True
 # <HINT> add your cloud host here
 ALLOWED_HOSTS = []
 
+# Set default primary key type for new models
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Application definition
 INSTALLED_APPS = [
@@ -124,4 +126,3 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
 MEDIA_URL = '/media/'
-
